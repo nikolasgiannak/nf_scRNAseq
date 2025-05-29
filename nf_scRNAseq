@@ -548,4 +548,3 @@ process GENERATE_REPORT {
     render("report.Rmd", output_file = "pipeline_report.html")
     """
 }
-Made with
