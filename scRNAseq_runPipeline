@@ -108,3 +108,20 @@ bash# View execution report
 
 # Resume if interrupted
 nextflow run scRNAseq.nf -resume [other parameters]
+
+
+7: Advanced Usage Options
+ To Skip certain steps:
+
+
+bash# Skip Cell Ranger (if already processed)
+nextflow run main.nf \
+  --skip_cellranger \
+  --samplesheet samples.csv \
+  --outdir results
+ OR
+
+# Skip integration
+nextflow run main.nf \
+  --skip_integration \
+  [other parameters]
