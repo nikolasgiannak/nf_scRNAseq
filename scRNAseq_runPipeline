@@ -98,3 +98,13 @@ nextflow run scRNAseq.nf \
   --outdir results \
   -profile slurm \
   --clusterOptions '--account=myaccount --partition=gpu'
+
+
+6: Monitor Execution
+
+Check pipeline status:
+bash# View execution report
+# Reports will be in: results/pipeline_info/
+
+# Resume if interrupted
+nextflow run scRNAseq.nf -resume [other parameters]
