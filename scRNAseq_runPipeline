@@ -53,3 +53,14 @@ c. Sample metadata
 Edit parameters in nextflow.config or use command-line:
 bash# Option 1: Edit nextflow.config directly
 # Option 2: Use command-line parameters (recommended)
+
+
+5: Run the Pipeline
+
+Basic execution:
+bash nextflow run nf_scRNAse .nf \
+  --samplesheet samples.csv \
+  --reference_genome /path/to/cellranger/reference \
+  --outdir results \
+  -profile docker
+
