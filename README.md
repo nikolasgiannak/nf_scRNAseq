@@ -7,11 +7,11 @@ File extension: .nf
 
 Key identifying characteristics:
 
-Shebang: #!/usr/bin/env nextflow - indicates this is a Nextflow script  
+ #!/usr/bin/env nextflow - indicates this is a Nextflow script  
 
 DSL declaration: nextflow.enable.dsl = 2 - specifies Nextflow DSL version 2  
 
-Nextflow-specific syntax:  
+Syntax:  
 
 
 params {} blocks for parameter definitions
@@ -69,5 +69,5 @@ Container engine (Docker/Singularity) OR conda
 
 Raw 10X FASTQ files  
 
-Sample sheet describing your experiment  
+Sample sheet describing THE experiment  
 
