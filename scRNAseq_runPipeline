@@ -58,7 +58,7 @@ bash# Option 1: Edit nextflow.config directly
 5: Run the Pipeline
 
 a. Basic execution:
-bash nextflow run nf_scRNAse .nf \
+bash nextflow run nf_scRNAseq.nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/cellranger/reference \
   --outdir results \
@@ -68,7 +68,7 @@ bash nextflow run nf_scRNAse .nf \
 OR
 
 b. With custom parameters:
-bashnextflow run main.nf \
+bashnextflow run scRNAseq.nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/refdata-gex-GRCh38-2020-A \
   --outdir results \
@@ -77,3 +77,24 @@ bashnextflow run main.nf \
   --max_mt_percent 15 \
   -profile docker \
   -resume
+
+OR 
+
+c. To run the pipeline in HPC clusters:
+
+c.1
+bash# SLURM cluster
+nextflow run scRNAseq.nf \
+  --samplesheet samples.csv \
+  --reference_genome /path/to/reference \
+  --outdir results \
+  -profile slurm,singularity
+
+c.2
+# With specific queue/account
+nextflow run scRNAseq.nf \
+  --samplesheet samples.csv \
+  --reference_genome /path/to/reference \
+  --outdir results \
+  -profile slurm \
+  --clusterOptions '--account=myaccount --partition=gpu'
