@@ -17,6 +17,7 @@ sudo mv nextflow /usr/local/bin/
 
 2: Prepare Your Project Structure
 
+Run on bash:
 bash# Create project directory
 mkdir scrna_analysis
 cd scrna_analysis
@@ -58,7 +59,8 @@ bash# Option 1: Edit nextflow.config directly
 5: Run the Pipeline
 
 a. Basic execution:
-bash nextflow run nf_scRNAseq.nf \
+Run on bash:
+nextflow run nf_scRNAseq.nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/cellranger/reference \
   --outdir results \
@@ -68,7 +70,8 @@ bash nextflow run nf_scRNAseq.nf \
 OR
 
 b. With custom parameters:
-bashnextflow run scRNAseq.nf \
+Run on bash:
+nextflow run scRNAseq.nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/refdata-gex-GRCh38-2020-A \
   --outdir results \
@@ -83,7 +86,8 @@ OR
 c. To run the pipeline in HPC clusters:
 
 c.1
-bash# SLURM cluster
+Run on bash:
+# SLURM cluster
 nextflow run scRNAseq.nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/reference \
@@ -103,7 +107,8 @@ nextflow run scRNAseq.nf \
 6: Monitor Execution
 
 Check pipeline status:
-bash# View execution report
+Run on bash:
+# View execution report
 # Reports will be in: results/pipeline_info/
 
 # Resume if interrupted
@@ -113,8 +118,8 @@ nextflow run scRNAseq.nf -resume [other parameters]
 7: Advanced Usage Options
  To Skip certain steps:
 
-
-bash# Skip Cell Ranger (if already processed)
+Run on bash:
+# Skip Cell Ranger (if already processed)
 nextflow run main.nf \
   --skip_cellranger \
   --samplesheet samples.csv \
@@ -129,4 +134,5 @@ nextflow run main.nf \
 
 
 To Test the pipeline:
-bashnextflow run main.nf -profile test
+Run on bash:
+nextflow run main.nf -profile test
