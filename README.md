@@ -25,7 +25,7 @@ Nextflow directives like publishDir, tag, label
 
 This particular pipeline is designed for single-cell RNA-seq analysis using Cell Ranger and Seurat, combining both bioinformatics tools in a structured workflow. The pipeline includes processes for:
 
-Cell Ranger counting n/
+Cell Ranger counting /n
 Seurat quality control and filtering n/
 Sample integration
 Clustering analysis
