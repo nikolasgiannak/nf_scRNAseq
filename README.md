@@ -29,3 +29,20 @@ Marker gene identification
 Visualization
 Report generation
 
+
+Common Profiles to Use:
+
+docker: Use Docker containers
+singularity: Use Singularity containers (HPC-friendly)
+conda: Use Conda environments
+slurm: Submit to SLURM scheduler
+test: Run with test data
+
+Prerequisites Summary:
+
+Nextflow installed
+Cell Ranger software and reference genome
+R with Seurat and dependencies
+Container engine (Docker/Singularity) OR conda
+Raw 10X FASTQ files
+Sample sheet describing your experiment
