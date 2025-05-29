@@ -37,3 +37,12 @@ Sample1,/path/to/sample1/fastqs,Control_Rep1,Control
 Sample2,/path/to/sample2/fastqs,Control_Rep2,Control
 Sample3,/path/to/sample3/fastqs,Treatment_Rep1,Treatment
 Sample4,/path/to/sample4/fastqs,Treatment_Rep2,Treatment
+
+
+
+Dat required are the following:
+Required data:
+
+a. FASTQ files from 10X Genomics sequencing
+b. Reference genome (Cell Ranger compatible)
+c. Sample metadata
