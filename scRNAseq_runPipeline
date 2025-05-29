@@ -125,3 +125,8 @@ nextflow run main.nf \
 nextflow run main.nf \
   --skip_integration \
   [other parameters]
+
+
+
+To Test the pipeline:
+bashnextflow run main.nf -profile test
