@@ -46,3 +46,10 @@ Required data:
 a. FASTQ files from 10X Genomics sequencing
 b. Reference genome (Cell Ranger compatible)
 c. Sample metadata
+
+
+4: Configure the Pipeline
+
+Edit parameters in nextflow.config or use command-line:
+bash# Option 1: Edit nextflow.config directly
+# Option 2: Use command-line parameters (recommended)
