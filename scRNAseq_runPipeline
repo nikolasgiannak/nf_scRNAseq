@@ -15,3 +15,18 @@ sudo mv nextflow /usr/local/bin/
 # You'll need: Seurat, dplyr, ggplot2, patchwork
 
 
+2: Prepare Your Project Structure
+
+bash# Create project directory
+mkdir scrna_analysis
+cd scrna_analysis
+
+# Create directory structure
+mkdir -p conf data results
+
+# Save the files
+# Save the first file as: main.nf
+# Save the second file as: nextflow.config
+# Create additional config files in conf/ directory
+
+
