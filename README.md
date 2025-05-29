@@ -7,9 +7,12 @@ File extension: .nf
 
 Key identifying characteristics:
 
-Shebang: #!/usr/bin/env nextflow - indicates this is a Nextflow script
-DSL declaration: nextflow.enable.dsl = 2 - specifies Nextflow DSL version 2
-Nextflow-specific syntax:
+Shebang: #!/usr/bin/env nextflow - indicates this is a Nextflow script  
+
+DSL declaration: nextflow.enable.dsl = 2 - specifies Nextflow DSL version 2  
+
+Nextflow-specific syntax:  
+
 
 params {} blocks for parameter definitions
 
