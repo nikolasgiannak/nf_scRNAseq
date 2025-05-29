@@ -12,9 +12,13 @@ DSL declaration: nextflow.enable.dsl = 2 - specifies Nextflow DSL version 2
 Nextflow-specific syntax:
 
 params {} blocks for parameter definitions
+
 workflow {} blocks for workflow logic
+
 process definitions for individual pipeline steps
+
 Channel operations like Channel.fromPath() and .splitCsv()
+
 Nextflow directives like publishDir, tag, label
 
 
