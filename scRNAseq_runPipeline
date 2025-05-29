@@ -57,10 +57,23 @@ bash# Option 1: Edit nextflow.config directly
 
 5: Run the Pipeline
 
-Basic execution:
+a. Basic execution:
 bash nextflow run nf_scRNAse .nf \
   --samplesheet samples.csv \
   --reference_genome /path/to/cellranger/reference \
   --outdir results \
   -profile docker
 
+
+OR
+
+b. With custom parameters:
+bashnextflow run main.nf \
+  --samplesheet samples.csv \
+  --reference_genome /path/to/refdata-gex-GRCh38-2020-A \
+  --outdir results \
+  --expect_cells 5000 \
+  --resolution 0.8 \
+  --max_mt_percent 15 \
+  -profile docker \
+  -resume
