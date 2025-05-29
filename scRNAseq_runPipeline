@@ -1,0 +1,17 @@
+How to run the pipeline!!!
+
+1: Set Up Your Environment
+
+
+Install Required Software:
+bash# Install Nextflow
+curl -s https://get.nextflow.io | bash
+sudo mv nextflow /usr/local/bin/
+
+# Install Cell Ranger (requires registration with 10X Genomics)
+# Download from: https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest
+
+# Install R and required packages
+# You'll need: Seurat, dplyr, ggplot2, patchwork
+
+
